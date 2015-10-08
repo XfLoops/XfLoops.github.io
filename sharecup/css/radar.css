@@ -1,0 +1,18 @@
+/*body {
+overflow: hidden;
+margin: 0;
+font-size: 15px;
+font-family: "Helvetica Neue", Helvetica;
+}*/
+#radarTitle{
+	position: relative;
+	width: 800px;
+	text-align: center;
+	font-size: 18px;
+}	
+#chart {
+position: relative;
+}
+text#radarcharttitle{
+	font-size: 18px;
+}	

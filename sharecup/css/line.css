@@ -1,0 +1,105 @@
+div.oneList{
+	position: relative;
+	width: 30px;
+    font-size:15px;
+    float: left;
+    margin-top: 2px;
+}
+.colorC01,.colorC11,.colorC21,.colorC31,.colorC41,.colorC51,.colorC61,.colorC71{
+    stroke:#2850AD;
+    fill:#2850AD;
+    background-color:#2850AD;
+}
+.colorC02,.colorC12,.colorC22,.colorC32,.colorC42,.colorC52,.colorC62,.colorC72{
+    stroke:#FF6319;
+    fill:#FF6319;
+    background-color:#FF6319;
+}
+.colorC03,.colorC13,.colorC23,.colorC33,.colorC43,.colorC53,.colorC63,.colorC73{
+    stroke:#6CBE45;
+    fill:#6CBE45;
+    background-color:#6CBE45;
+}
+.colorC04,.colorC14,.colorC24,.colorC34,.colorC44,.colorC54,.colorC64,.colorC74{
+    stroke:#996633;
+    fill:#996633;
+    background-color:#996633;
+}
+.colorC05,.colorC15,.colorC25,.colorC35,.colorC45,.colorC55,.colorC65,.colorC75{
+    stroke:#A7A9AC;
+    fill:#A7A9AC;
+    background-color:#A7A9AC;
+}
+.colorC06,.colorC16,.colorC26,.colorC36,.colorC46,.colorC56,.colorC66,.colorC76{
+    stroke:#FCCC0A;
+    fill:#FCCC0A;
+    background-color:#FCCC0A;
+}
+.colorC07,.colorC17,.colorC27,.colorC37,.colorC47,.colorC57,.colorC67,.colorC77{
+    stroke:#808183;
+    fill:#808183;
+    background-color:#808183;
+}
+.colorC08,.colorC18,.colorC28,.colorC38,.colorC48,.colorC58,.colorC68,.colorC78{
+    stroke:#EE32E;
+    fill:#EE352E;
+    background-color:#EE352E;
+}
+.colorC09,.colorC19,.colorC29,.colorC39,.colorC49,.colorC59,.colorC69,.colorC79{
+    stroke:#00933C;
+    fill:#00933C;
+    background-color:#00933C;
+}
+.colorC00,.colorC10,.colorC20,.colorC30,.colorC40,.colorC50,.colorC60,.colorC70,.colorC80{
+    stroke:#B933AD;
+    fill:#B933AD;
+    background-color:#B933AD;
+}
+div.legendSquare{
+	height:10px;
+    width:10px;
+    outline:solid 1px black;
+    float:left;
+    margin-top:5px;
+    margin-left: 5px;
+}
+text.linelabel{
+	fill: white;
+    stroke: none;
+    font-size:10px;
+    font-weight: bold;	
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #333;
+}
+path{
+	fill:none;
+}
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.line {
+  fill: none; 
+  stroke-width: 2.5px;
+}
+.lineCircles circle {
+	stroke:white;
+}
+.axisLabels{
+  font-size: 15px;
+}
+div#selectAll{
+	position: relative;
+	left: 1px;
+	float: left;
+	margin-top:5px;
+}
+#charttitle text{
+	font-size: 18px;
+}
+
+
+
