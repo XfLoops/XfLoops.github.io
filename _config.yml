@@ -1,0 +1,15 @@
+name: XfLoops' Blog
+url: http://xfloops.com
+source: .
+destination: ./_site
+plugins: ./_plugins
+lsi:      false
+safe:     false
+permalink: pretty
+markdown: redcarper
+paginate: 12
+encoding: utf-8
+
+redcarpet:
+  extension: ["tables","autolink"]
+
