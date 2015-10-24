@@ -216,7 +216,7 @@ $(function() {
         var views = DATA[i].views;
         //var comments = DATA[i].comments;
         var flag = DATA[i].flag;
-        var siteURL = 'http://127.0.0.1:4000';
+        var siteURL = 'http://xfloops.com';
         var link = siteURL + DATA[i].link;
         var title = DATA[i].title;
         var related = DATA[i].related;
