@@ -214,17 +214,19 @@ $(function() {
 
         var publishDate = DATA[i].date;
         var views = DATA[i].views;
-        var comments = DATA[i].comments;
+        //var comments = DATA[i].comments;
         var flag = DATA[i].flag;
-        var link = DATA[i].link;
+        var siteURL = 'http://127.0.0.1:4000';
+        var link = siteURL + DATA[i].link;
         var title = DATA[i].title;
         var related = DATA[i].related;
+        var relatedLink = siteURL + DATA[i].relatedLink;
         var tags = DATA[i].tags;
         var TAG = "";
 
         //@TODO add link
         var postTitle = '<div class="post-title"><a href="'+ link +'">'+ title +'</a></div>';
-        var relatedPost = '<span class="post-title"><a href="'+ link +'">'+ related +'</a></span>';
+        var relatedPost = '<span class="post-title"><a href="'+ relatedLink +'">'+ related +'</a></span>';
 
         /* CREATE TAG LINK */
         tags.split(" ").forEach(function(el){
