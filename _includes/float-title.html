@@ -1,0 +1,55 @@
+<script>
+    (function() {
+        var floaterParam = {
+            "title": document.getElementsByTagName('h1')[0].innerText,
+            "h2Collect": document.getElementsByTagName('h2'),
+            "up": document.getElementsByClassName("nav-up")[0],
+            "down": document.getElementsByClassName("nav-down")[0],
+            "position": [],
+            "cursor": 0,
+            "preposition": 0
+        };
+        if (floaterParam.h2Collect) {
+            var arr = floaterParam.h2Collect;
+            for (var i = 0; i < arr.length; i++) {
+                floaterParam.position[i] = {
+                    "txt": arr[i].innerHTML,
+                    "heit": arr[i].offsetTop
+                }
+            }
+            window.onscroll = function () {
+                var scroll  = document.documentElement.scrollTop || document.body.scrollTop, pre = floaterParam.preposition;
+                var left    = floaterParam.down.getElementsByClassName("left")[0],
+                    middle  = floaterParam.down.getElementsByClassName("middle")[0],
+                    pos     = floaterParam.position, len = floaterParam.position.length,delta = scroll - pre;
+
+                if (scroll > 100) {
+                    floaterParam.up.style.cssText = "display:none;", floaterParam.down.style.cssText = "display:flex;position:fixed";
+                    middle.innerText = floaterParam.title;
+                    //scroll down
+                    if(delta > 0) {
+                        while (scroll > pos[floaterParam.cursor].heit && floaterParam.cursor < len) {
+                            ++floaterParam.cursor;
+                            //console.log(floaterParam.cursor);
+                        }
+                        left.innerText = pos[floaterParam.cursor - 1].txt;
+                        floaterParam.preposition = scroll;
+                    }
+                    //scroll up
+                    else {
+                            while (scroll < pos[floaterParam.cursor].heit && floaterParam.cursor > 0) {
+                                --floaterParam.cursor;
+                            }
+                        left.innerText = pos[floaterParam.cursor].txt;
+                        floaterParam.preposition = scroll;
+                    }
+                }
+                else {
+                    floaterParam.up.style.cssText = "display:flex;", floaterParam.down.style.cssText = "display:none;";
+                    floaterParam.preposition = scroll;
+                }
+            }
+        }
+    })();
+
+</script>
