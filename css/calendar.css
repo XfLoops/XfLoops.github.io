@@ -1,0 +1,75 @@
+#calendar-container{
+    width: 630px;
+    height: 200px;
+}
+
+.week{
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.day{
+    position: relative;
+    display: inline-block;
+    background-color: #eee;
+    border: 1px solid #eee;
+    margin: 1px 0;
+}
+.spareday{
+    opacity: 0;
+}
+.month-label-wrap{
+    position: relative;
+}
+.month-label-name{
+    font-size: 12px;
+    display: inline-block;
+    color: #666;
+}
+.day-label-wrap{
+    float: left;
+    font-size: 12px;
+    text-align: center;
+}
+.day-label-name{
+    position: relative;
+    display: inline-block;
+    margin: 2px 0;
+    color: #666;
+}
+.day:hover {
+    border: 1px solid #666;
+}
+.day:hover > .contrib-tip,.day:hover > .triangle {
+    display: block;
+}
+
+.contrib-tip{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: -56px;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 0 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 10000;
+    display: none;
+}
+
+.triangle{
+    position: absolute;
+    top: -11px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid  rgba(0,0,0,0.5);
+    z-index: 10000;
+    display: none;
+
+}
