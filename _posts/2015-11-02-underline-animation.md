@@ -8,7 +8,7 @@ excerpt: 鼠标悬停时文字下方出现下划线,并伴有滑入的动画效�
 # 链接文字下划线动画
 
 ## Demo和源代码
-在线demo:[underline animation](https://xfloops.com/demo/underline-animation/)
+在线demo:[underline animation](http://xfloops.com/demo/underline-animation/)
 源代码：[underline animation](https://github.com/XfLoops/demo/tree/master/underline-animation/)
 
 当鼠标悬停在链接文字上时，文字下方出现下划线，并且带有**从左边滑入**、**从中间滑入**、**从右边滑入**的动画效果。通过给`<a>`添加`::before`或者`::after`伪元素来实现。本文以`::before`来说明。
