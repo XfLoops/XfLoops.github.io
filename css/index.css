@@ -81,6 +81,34 @@ a:hover::before {
     font-size: 2.5em;
     padding: 0.4em 0;
 }
+.vcard-name .eye {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50% ;
+    border: 2px solid #666;
+    margin: 1px 2px;
+    overflow: hidden;
+}
+.vcard-name .eye::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    background-color: #666;
+    border-radius: 50%;
+    left: 6px;
+    bottom: 1px;
+}
+.vcard-name .eye::after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 26px;
+    background-color: #666;
+    top: -20px;
+}
 .vcard-details .fa-map-marker {
     margin-left: 3px;
 }
