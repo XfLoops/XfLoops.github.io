@@ -1,7 +1,9 @@
 ---
+type: article
 title: 玻璃珠子
-time: 2010.10.21 08:59:15
-layout: post
+layout: post-a
+tags: js html css
+excerpt: 本文是我高考前做的模拟题《藏锋与露锋》本文是我高考前做的模拟题《藏锋与露锋》本文是我高考前做的模拟题《藏锋与露锋》
 ---
 
 # THIS IS A TEST ARTICLE!!!

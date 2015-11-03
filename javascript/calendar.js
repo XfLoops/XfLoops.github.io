@@ -1,8 +1,8 @@
 $(function() {
 
-/*******************************\
-        DRAW CALENDAR
-\*******************************/
+    /*******************************\
+     DRAW CALENDAR
+     \*******************************/
     /* CONFIGERATION */
     var init = "2014-11-16";
     var curr = new Date();
@@ -216,7 +216,7 @@ $(function() {
         var views = DATA[i].views;
         //var comments = DATA[i].comments;
         var flag = DATA[i].flag;
-        var siteURL = 'http://xfloops.com';
+        var siteURL = 'http://127.0.0.1:4000';
         var link = siteURL + DATA[i].link;
         var title = DATA[i].title;
         var related = DATA[i].related;
@@ -247,7 +247,7 @@ $(function() {
         $('.tip' + i).append(activityStatus);
         $('.tip' + i).append(tringle);
 
-}
+    }
 
     /* APPEND NO ACTIVITY TOOLTIP */
     var appendNoActivityTip =function(elem,i){
@@ -380,4 +380,10 @@ $(function() {
 
 
 });
+
+
+
+
+
+
 

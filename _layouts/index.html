@@ -6,35 +6,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?164acef058f2834ba257a6a25d12ff5a";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
+    {% include baidu-stat.html %}
 </head>
 <body>
 
 <div class="wrap">
     <div class="head">
-        <div class="avatar"><img src="../images/xfloops.jpg"></div>
-<div class="vcard">
-    <div class="vcard-name">XfLoops</div>
-    <ul class="vcard-details">
-        <li><i class="fa fa-map-marker"></i> Beijing China</li>
-        <li><i class="fa fa-envelope"></i><a href="mailto:xfloops@gmail.com"> xfloops@gmail.com</a></li>
-    </ul>
-</div>
-<div class="intro">
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-</div>
+        {% include head-index.html %}
     </div>
     <div class="main">
         <div class="calendar-panel">
@@ -58,11 +36,7 @@
         </div>
     </div>
     <div class="foot">
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" src="images/icon/cc.png"></a>
-<div class="annotation">Every blog post in this site by <a href="http://xfloops.com">XfLoops</a> is licensed under a
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">CC 3.0 License</a>.This site would
-    not be possible without these <a href="/Thanks">Supports</a>,you can view the site's source files at <a href="http://github.com/XfLoops/XfLoops.github.io">Github</a>.
-</div>
+        {% include license.html  %}
     </div>
 </div>
 <script type="text/javascript" src="javascript/lib/jquery-1.11.3.min.js"></script>

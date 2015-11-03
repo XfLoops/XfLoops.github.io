@@ -281,9 +281,13 @@ $(function() {
             if(index < sparedays){
                 span.className = 'day spareday';
             }
+            else if(index === days -1){
+                span.className = 'day today d' + (index - sparedays + 1);
+            }
             else{
                 span.className = 'day d' + (index - sparedays + 1);
             }
+
                 span.style.backgroundColor = data[index].color;
                 span.style.width = (size.width - 4) + 'px',
                 span.style.height = (size.width + 4) + 'px';

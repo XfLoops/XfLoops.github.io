@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title}} | XfLoops</title>
+    <!--<link rel="alternate" type="application/rss+xml" title="WuDuoyi Note" href="http://wuduoyi.com/rss.xml" />-->
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/post/base.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/post/sytnax.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/post/header-a.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/post/post-a.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="wrap">
+    {% include header-a.html %}
+    <div id="content">
+        {{ content }}
+        {% include float-title.html %}
+    </div>
+    {% include duoshuo.html %}
+</div>
+</body>
+</html>

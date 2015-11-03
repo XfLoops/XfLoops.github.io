@@ -1,4 +1,5 @@
 #calendar-container{
+    position: relative;
     width: 630px;
     height: 200px;
 }
@@ -13,7 +14,6 @@
     display: inline-block;
     background-color: #eee;
     border: 1px solid #eee;
-    margin: 1px 0;
 }
 .spareday{
     opacity: 0;
@@ -41,7 +41,7 @@
     border: 1px solid #666;
 }
 .day:hover > .contrib-tip,.day:hover > .triangle {
-    display: block;
+    visibility: visible;
 }
 
 .contrib-tip{
@@ -53,14 +53,58 @@
     text-align: center;
     padding: 15px 0 0;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     z-index: 10000;
-    display: none;
+    visibility: hidden;
 }
 
+.article {
+    width: 300px;
+    height: 100px;
+    top: -131px;
+    text-align: left;
+    color: #fff;
+    padding: 10px 5px;
+    line-height: 1.5em;
+    font-size: 12px;
+}
+.article a {
+    color: #ffff00;
+}
+.article a:hover {
+    color: #FF5722;
+    transition:all 0.5s;
+}
+.article-date {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+}
+.article-date span {
+    float: right;
+    padding: 0 3px;
+}
+.article-title {
+    font-size: 16px;
+    margin-top: 5px;
+    text-shadow: 2px 1px 2px #ffff00;
+}
+.article-excerpt {
+    margin: 5px 0 3px;
+}
+.article-tags span {
+    font-size: 14px;
+    padding: 0 3px;
+    margin-left: 4px;
+    border: 1px dotted rgba(255,255,0,0.5);
+    border-radius:2px;
+}
+.article-tags span:hover {
+    background-color: rgba(255,255,255,0.1);
+    transition:all 0.5s;
+}
 .triangle{
     position: absolute;
     top: -11px;
@@ -68,8 +112,7 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid  rgba(0,0,0,0.5);
+    border-top: 10px solid  rgba(0,0,0,0.75);
     z-index: 10000;
-    display: none;
-
+    visibility: hidden;
 }

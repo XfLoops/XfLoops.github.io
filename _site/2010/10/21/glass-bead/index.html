@@ -1,11 +1,35 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>玻璃珠子</title>
+    <meta charset="utf-8">
+    <title>玻璃珠子 | XfLoops</title>
+    <!--<link rel="alternate" type="application/rss+xml" title="WuDuoyi Note" href="http://wuduoyi.com/rss.xml" />-->
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/post/base.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/post/sytnax.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/post/header-a.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/post/post-a.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <h1>THIS IS A TEST ARTICLE!!!</h1>
+<div id="wrap">
+    <div id="header">
+    <ul class="nav-up">
+        <li><a href="http://xfloops.com"><i class="fa fa-home fa-3x"></i><span>HOME</span></a></li>
+        <li><a href="#"><i class="fa fa-archive fa-3x"></i><span>ARCHIVE</span></a></li>
+        <li><a href="#"><i class="fa fa-bars fa-3x"></i><span>MENU</span></a></li>
+    </ul>
+    <ul class="nav-down">
+        <li class="left"></li>
+        <li class="middle"></li>
+        <li class="right">
+            <a href="http://xfloops.com"><i class="fa fa-home fa-2x"></i></a>
+            <a href="#"><i class="fa fa-archive fa-2x"></i></a>
+            <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+        </li>
+    </ul>
+</div>
+    <div id="content">
+        <h1>THIS IS A TEST ARTICLE!!!</h1>
 
 <blockquote>
 <p>本文是中二奇葩时期的拙作，我都不知道我想表达什么，嗯，即使是当时……</p>
@@ -77,5 +101,86 @@
 
 <p>太怕一想，就发现上帝的bug了。</p>
 
+        <script>
+    //h1 as title, h2 as subtitle
+    (function() {
+        var floaterParam = {
+            "title": document.getElementsByTagName('h1')[0].innerText,
+            "h2Collect": document.getElementsByTagName('h2'),
+            "up": document.getElementsByClassName("nav-up")[0],
+            "down": document.getElementsByClassName("nav-down")[0],
+            "position": [],
+            "cursor": 0,
+            "preposition": 0,
+            "trigHeit":100
+        };
+        if (floaterParam.h2Collect) {
+            var arr = floaterParam.h2Collect;
+            for (var i = 0; i < arr.length; i++) {
+                floaterParam.position[i] = {
+                    "txt": arr[i].innerText,
+                    "heit": arr[i].offsetTop + floaterParam.up.clientHeight
+                }
+            }
+            window.onscroll = function () {
+                var scroll  = document.documentElement.scrollTop || document.body.scrollTop, pre = floaterParam.preposition;
+                var left    = floaterParam.down.getElementsByClassName("left")[0],
+                    middle  = floaterParam.down.getElementsByClassName("middle")[0],
+                    pos     = floaterParam.position, len = floaterParam.position.length,delta = scroll - pre;
+
+                if (scroll > floaterParam.trigHeit) {
+                    floaterParam.down.style.cssText = "display:flex;position:fixed;";
+                    middle.innerText = floaterParam.title;
+                    if(scroll < pos[0].heit){
+                        left.innerText = "";
+                    }
+                    else if(scroll > pos[len - 1].heit){
+                        left.innerText = pos[len - 1].txt;
+                    }
+                    //scroll down
+                    else if(delta >= 0){
+                        while (scroll >= pos[floaterParam.cursor].heit) {
+                            ++floaterParam.cursor;
+                        }
+                        left.innerText = pos[floaterParam.cursor - 1].txt;
+                    }
+                    //scroll up
+                    else{
+                        while (scroll < pos[floaterParam.cursor].heit) {
+                            --floaterParam.cursor;
+                        }
+                        left.innerText = pos[floaterParam.cursor].txt;
+                    }
+                    floaterParam.preposition = scroll;
+
+                }
+                else {
+                    floaterParam.down.style.cssText = "display:none;";
+                    floaterParam.preposition = scroll,floaterParam.cursor = 0;
+                }
+            }
+        }
+    })();
+
+</script>
+    </div>
+    <!-- Duoshuo Comment BEGIN -->
+<div id="comment">
+    <div class="ds-thread" data-title="玻璃珠子" data-thread-key="/2010/10/21/glass-bead"></div>
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"fex"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http://static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+</div>
+<!-- Duoshuo Comment END -->
+
+</div>
 </body>
 </html>

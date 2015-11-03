@@ -387,8 +387,8 @@ function brush() {
         var extent = extents[actives.indexOf(dimension)];
         d3.select(element)
           .selectAll('text')
-          .style('font-weight', 'bold')
-          .style('font-size', '13px')
+          .style('fonts-weight', 'bold')
+          .style('fonts-size', '13px')
           .style('display', function() { 
             var value = d3.select(this).data();
             return extent[0] <= value && value <= extent[1] ? null : "none"
@@ -396,8 +396,8 @@ function brush() {
       } else {
         d3.select(element)
           .selectAll('text')
-          .style('font-size', null)
-          .style('font-weight', null)
+          .style('fonts-size', null)
+          .style('fonts-weight', null)
           .style('display', null);
       }
       d3.select(element)
@@ -408,7 +408,7 @@ function brush() {
  
   // bold dimensions with label
   d3.selectAll('.label')
-    .style("font-weight", function(dimension) {
+    .style("fonts-weight", function(dimension) {
       if (_.include(actives, dimension)) return "bold";
       return null;
     });
@@ -447,7 +447,7 @@ function brush() {
   _(colors).each(function(v,k) { tallies[k] = tallies[k] || []; });
 
   legend
-    .style("font-size", function(d) { return _.contains(excluded_groups,d) ? "15px" : null; }) 
+    .style("fonts-size", function(d) { return _.contains(excluded_groups,d) ? "15px" : null; })
     .style("color", function(d) { return _.contains(excluded_groups,d) ? "green": null; })     
     .attr("class", function(d) {
       return (tallies[d].length > 0)
@@ -536,8 +536,8 @@ function update_ticks(d, extent) {
 
       d3.select(this)
         .selectAll('text')
-        .style('font-weight', null)
-        .style('font-size', null)
+        .style('fonts-weight', null)
+        .style('fonts-size', null)
         .style('display', null);
     });
 }
@@ -597,7 +597,7 @@ function export_csv() {
     return keys.map(function(k) { return row[k]; })
   });
   var csv = d3.csv.format([keys].concat(rows)).replace(/\n/g,"<br/>\n");
-  var styles = "<style>body { font-family: sans-serif; font-size: 12px; }</style>";
+  var styles = "<style>body { fonts-family: sans-serif; fonts-size: 12px; }</style>";
   window.open("text/csv").document.write(styles + csv);
 }
 

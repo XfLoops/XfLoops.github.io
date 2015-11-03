@@ -131,8 +131,8 @@ var RadarChart = {
 	   .attr("x", function(d){return levelFactor*(1-cfg.factor*Math.sin(0));})
 	   .attr("y", function(d){return levelFactor*(1-cfg.factor*Math.cos(0));})
 	   .attr("class", "legend")
-	   .style("font-family", "sans-serif")
-	   .style("font-size", "12px")
+	   .style("fonts-family", "sans-serif")
+	   .style("fonts-size", "12px")
 	   .attr("transform", "translate(" + (cfg.w/2-levelFactor + cfg.ToRight) + ", " + (cfg.h/2-levelFactor) + ")")
 	   .attr("fill", "#737373")
 	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
@@ -158,8 +158,8 @@ var RadarChart = {
 	axis.append("text")
 		.attr("class", "legend")
 		.text(function(d){return d})
-		.style("font-family", "sans-serif")
-		.style("font-size", "12px")
+		.style("fonts-family", "sans-serif")
+		.style("fonts-size", "12px")
 		.attr("text-anchor", "middle")
 		.attr("dy", "1.5em")
 		.attr("transform", function(d, i){return "translate(0, -10)"})
@@ -266,8 +266,8 @@ var RadarChart = {
 	//Tooltip
 	tooltip = g.append('text')
 			   .style('opacity', 0)
-			   .style('font-family', 'sans-serif')
-			   .style('font-size', '13px');
+			   .style('fonts-family', 'sans-serif')
+			   .style('fonts-size', '13px');
   }
 };
 

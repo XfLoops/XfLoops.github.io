@@ -1,18 +1,3 @@
-{
-  "name": "XFLOOPS",
-  "allTimePosts": 8,
-  "currentYearPosts": 5,
-  "dataSet":[
-    {"flag":1,"date":"2014-11-21","title":"作品: Food Security Explorer","desc":"该作品是参加\"农业开放数据创新应用编程马拉松竞赛\"的成果.","tags":"D3 SVG HTML5 个人作品","img":"../hackthon/hackthon.png","src":"../hackthon/"},
-    {"flag":1,"date":"2015-04-14","title":"作品: Cancer Data Visualization","desc":"该作品是参加\"第二届大学生共享杯科学数据创新应用大赛\"的成果.","tags":"D3 SVG HTML5 个人作品","img":"../sharecup/sharecup.png","src":"../sharecup/"},
-    {"flag":2,"date":"2014-12-02","title":"译文:5个典型的JavaScript面试题","platform":"伯乐在线","tags":"技术面试 JavaScript 译文","views":"4.7K","link":"http://blog.jobbole.com/80564/"},
-    {"flag":2,"date":"2014-12-25","title":"译文:再来5个JavaScript面试题","platform":"伯乐在线","tags":"技术面试 JavaScript 译文","views":"","link":"http://web.jobbole.com/81785/"},
-    {"flag":2,"date":"2015-01-14","title":"译文:年轻程序员最需要学什么?自律!","platform":"伯乐在线","tags":"IT职场 程序员 译文","views":"12.1K","link":"http://blog.jobbole.com/83160/"},
-    {"flag":2,"date":"2015-01-27","title":"译文:案例分析之JavaScript代码优化","platform":"伯乐在线","tags":"JavaScript 代码优化 译文","views":"","link":"http://web.jobbole.com/82000/"},
-    {"flag":2,"date":"2015-02-10","title":"译文:HTML imports 入门","platform":"伯乐在线","tags":"HTML 译文","views":"","link":"http://web.jobbole.com/82065/"},
-    {"flag":2,"date":"2015-09-28","title":"译文:JavaScript客户端测试之旅","platform":"伯乐在线","tags":"JavaScript 测试 译文","views":"","link":"http://web.jobbole.com/83610/"},
-    {"flag":0,"date":"2015-05-01","title":"TEST:谁解其中味","tags":"JavaScript 测试 译文","views":"","link":"/2007/05/01/reviewing-dream-of-the-red-chamber/","related":"TEST:大观锋芒藏露间","relatedLink":"/2009/01/01/da-guan-feng-mang-cang-lu-jian/"},
-    {"flag":0,"date":"2015-10-08","title":"TEST:大观锋芒藏露间","tags":"JavaScript 测试 译文","views":"","link":"/2009/01/01/da-guan-feng-mang-cang-lu-jian/","related":"TEST:大观锋芒藏露间","relatedLink":"/2007/05/01/reviewing-dream-of-the-red-chamber/"},
-    {"flag":0,"date":"2015-03-28","title":"TEST:玻璃珠子","tags":"JavaScript 测试 译文","views":"","link":"/2010/10/21/glass-bead/","related":"TEST:大观锋芒藏露间","relatedLink":"/2009/01/01/da-guan-feng-mang-cang-lu-jian/"}
-  ]
-}
+---
+layout: api
+---

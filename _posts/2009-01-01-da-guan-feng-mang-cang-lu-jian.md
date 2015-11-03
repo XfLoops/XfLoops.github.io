@@ -1,7 +1,10 @@
 ---
 title: 大观锋芒藏露间
-time: 2009.01.01 00:00:00
-layout: post
+layout: post-a
+date: 2015-02-14
+type: article
+tags: js html css
+excerpt: 本文是我高考前做的模拟题《藏锋与露锋》本文是我高考前做的模拟题《藏锋与露锋》
 ---
 
 # THIS IS A TEST ARTICLE!!!

@@ -202,7 +202,7 @@ var title = d3.select("svg").append("g")
       .attr("x", (w / 2))             
       .attr("y", -30 )
       .attr("text-anchor", "middle")  
-      .style("font-size","18px") 
+      .style("fonts-size","18px")
       .text("2006-2011肿瘤发病与年龄的关系");
      
 }
