@@ -1,0 +1,378 @@
+/* -------------------------- *\
+            RESET.CSS
+\* -------------------------- */
+body,p,dl,dd,blockquote,h1,h2,h3,h4,h5,h6,pre,table,td,th,ul,ol,li,hr,legend,fieldset,input,textarea,img,form {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #666;
+    background-attachment: fixed;
+    font: 16px Optima, Segoe, "Segoe UI", Candara, Calibri, Georgia, Verdana, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* -------------------------- *\
+            COMMON.CSS
+\* -------------------------- */
+
+.wrap{
+    width: 750px;
+    margin: 20px auto;
+    background-color: #F8F8FF;
+    border-radius: 5px;
+}
+.footer{
+    margin-bottom: 50px;
+    padding: 50px 0;
+}
+
+/* -------------------------- *\
+            header
+\* -------------------------- */
+.header{
+    position: relative;
+}
+.wd{
+    position: absolute;
+    color: #666;
+}
+.owner{
+    font-size: 40px;
+    left: 200px;
+}
+
+.desc{
+    font-size: 18px;
+    right: 60px;
+    top: 20px;
+    color: #d8d8d8;
+}
+.time{
+    bottom: 5px;
+    font-size: 40px;
+    right: 60px;
+    color: #d8d8d8;
+    border: 1px solid #d8d8d8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 10px 5px;
+}
+/* --------- 头像 ----------*/
+.avatar {
+    width: 125px;
+    height: 125px;
+    margin-left: 60px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.github {
+    width: 60px;
+    margin-bottom: -5px;
+    margin-left: 8px;
+}
+
+.segmentfault{
+    width: 56px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.email{
+    width: 60px;
+    margin-bottom: -4px;
+    margin-left: 5px;
+}
+.douban{
+    width: 70px;
+    margin-right: -10px;
+    margin-top: -5px;
+}
+.weibo{
+    width: 62px;
+    margin-top: 9px;
+}
+.jobbole{
+    margin-right: 17px;
+    width: 48px;
+    height: 50px;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+.more{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.more:hover .more-item {
+    display: block;
+    z-index: 1000;
+}
+.more > img {
+    width: 53px;
+    margin-left: 6px;
+}
+.more:hover > img{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.more-item{
+    position: absolute;
+    display: none;
+    width: 260px;
+    right: 0;
+}
+.more-item img{
+    float: right;
+}
+.header img:not(.avatar) {
+    opacity: 0.75;
+}
+.header img:hover{
+    opacity: 1;
+}
+
+
+
+
+/* -------------------------- *\
+            PANEL.CSS
+\* -------------------------- */
+
+.calendar-panel {
+    width: 630px;
+    margin: 0 auto ;
+    border:1px solid #D3D3D3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.calendar-panel .title{
+    background: #d8d8d8;
+    padding-left: 5px;
+    line-height: 2em;
+}
+.calendar-panel .calendar{
+    padding-left: 5px;
+}
+.calendar-panel .calender-footer{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 10px 0 10px 10px;
+    color: #666;
+}
+.calendar-footer-cap{
+    float: right;
+    margin-right: 10px;
+}
+.calendar-footer-cap li{
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+.calendar-footer-cap .last-cap{
+    margin-right: 0;
+}
+.calendar-footer-cap .cap-text{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 18px;
+}
+.calendar-footer-cap .cap-square{
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    right: 0;
+}
+.calendar-footer-cap .first-sq{
+    background-color: #8CC665;
+}
+.calendar-footer-cap .second-sq{
+    background-color:#FF7F24;
+}
+.calendar-footer-cap .third-sq{
+    width: 11px;
+    height: 11px;
+    border: 2px solid #d8d8d8;
+    background-color: #eee;
+}
+.panel-column {
+    display: table-cell;
+    width: 1%;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+    border-bottom: none;
+
+}
+.first-panel-column{
+    border-left: none;
+}
+.panel-column .text-muted{
+    font-size: 12px;
+    color: #666;
+}
+.panel-column .rls-number{
+    display: block;
+    font-size: 24px;
+    color: #222;
+}
+
+/* -------------------------- *\
+            CALENDAR.CSS
+\* -------------------------- */
+#calendar-container{
+    position: relative;
+    width: 630px;
+    height: 200px;
+}
+
+.week{
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.day{
+    position: relative;
+    display: inline-block;
+    background-color: #eee;
+    border: 1px solid #eee;
+}
+.spareday{
+    opacity: 0;
+}
+.month-label-wrap{
+    position: relative;
+}
+.month-label-name{
+    font-size: 12px;
+    display: inline-block;
+    color: #666;
+}
+.day-label-wrap{
+    float: left;
+    font-size: 12px;
+    text-align: center;
+}
+.day-label-name{
+    position: relative;
+    display: inline-block;
+    margin: 2px 0;
+    color: #666;
+}
+.day:hover {
+    border: 1px solid #666;
+}
+.day:hover > .contrib-tip,.day:hover > .triangle {
+    visibility: visible;
+}
+
+.contrib-tip{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: -56px;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 0 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 10000;
+    visibility: hidden;
+}
+
+.article {
+    width: 300px;
+    height: 100px;
+    top: -131px;
+    text-align: left;
+    color: #fff;
+    padding: 10px 5px;
+    line-height: 1.5em;
+    font-size: 12px;
+}
+.article a {
+    color: #ffff00;
+}
+.article a:hover {
+    color: #FF5722;
+    transition:all 0.5s;
+}
+.article-date {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+}
+.article-date span {
+    float: right;
+    padding: 0 3px;
+}
+.article-title {
+    font-size: 16px;
+    margin-top: 5px;
+    text-shadow: 2px 1px 2px #ffff00;
+}
+.article-excerpt {
+    margin: 5px 0 3px;
+}
+.article-tags span {
+    font-size: 14px;
+    padding: 0 3px;
+    margin-left: 4px;
+    border: 1px dotted rgba(255,255,0,0.5);
+    border-radius:2px;
+}
+.article-tags span:hover {
+    background-color: rgba(255,255,255,0.1);
+    transition:all 0.5s;
+}
+.triangle{
+    position: absolute;
+    top: -11px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid  rgba(0,0,0,0.75);
+    z-index: 10000;
+    visibility: hidden;
+}
+
+.calendar-caption {
+    position: absolute;
+    font-size: 12px;
+    bottom: 0.5em;
+    color: #666;
+    margin-left: 1em;
+}
+
+/* -------------------------- *\
+            LICENSE.CSS
+\* -------------------------- */
+
+.license{
+    width: 630px;
+    margin:10px auto ;
+    border:1px solid #D3D3D3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
