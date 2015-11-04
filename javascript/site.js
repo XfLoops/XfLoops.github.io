@@ -230,15 +230,17 @@ $(function() {
     Calendar.prototype.caculCurrentStreak = function () {
         var data = calendarParams.total;
         var len  = data.length,
-            count = 0, index;
-            if(data[len - 1].value) {
-                for (index = len - 1; data[index].value; index--) {
+            count = 0, index,idx;
+            if(data[len - 1].value || data[len - 2].value){
+                var idx = data[len - 1].value ? len - 1 : len - 2;
+
+                for (index = idx; data[index].value; index--) {
                     ++count;
                 }
                 calendarParams.currentStreak = {
                     "count":count,
                     "start":data[index + 1].date,
-                    "end":data[len - 1].date
+                    "end":data[idx].date
                 };
             }
             else{
