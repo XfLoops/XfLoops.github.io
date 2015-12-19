@@ -2,11 +2,9 @@
 title: hover shine effect
 tags: css
 type: article
-layout: post-a
+layout: post-b
 excerpt: 当悬停在图片或者按钮上时出现闪烁一下的效果
 ---
-
-# Hover Shine Effect
 
 ## Demo和源代码
 [在线demo](http://127.0.0.1:4000/demo/hover-effect/)

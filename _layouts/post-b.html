@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum=1,width=device-width">
+    <title>{{ page.title }}- 作者:@XfLoops</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/post/sytnax.css">
+    <link rel="stylesheet" href="/css/listStyle.css">
+</head>
+<body>
+<div class="container">
+    <div class="vcard">
+        <a class="vcard-avatar" href="http://xfloops.com"><img src="/images/xfl-sm.jpg"></a>
+        <ul class="vcard-details">
+            <li class="detail name">
+                <h1><a href="http://www.xfloops.com">XFLOOPS</a></h1>
+            </li>
+            <li class="detail">
+                <i class="fa fa-neuter"></i>
+                <span>Beijing China</span>
+            </li>
+            <li class="detail">
+                <i class="fa fa-weibo"></i>
+                <a href="http://weibo.com/fanglixie">Weibo</a>
+                <i class="fa fa-github"></i>
+                <a href="https://github.com/XfLoops">Github</a>
+            </li>
+
+            <li class="detail">
+                <i class="fa fa-envelope-o"></i>
+                <span>xfloops@gmail.com</span>
+            </li>
+            <li class="detail">
+                <i class="fa fa-clock-o"></i>
+                <span>{{ site.time | date: "%A %d %b %Y"  }}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1 class="post-title"> {{ page.title }} </h1>
+            <div class="post-related clearfix">
+                <div class="post-date">发布于 {{ page.date | date_to_string }}</div>
+                <a class="post-list" href="http://www.xfloops.com">
+                    <i class="fa fa-list"></i>
+                    <span>返回文章列表</span>
+                </a>
+            </div>
+            <div class="post-body">{{ content }}</div>
+            <div class="post-related clearfix">
+                <div class="post-share">{% include share.html %}</div>
+                <a class="post-list" href="http://www.xfloops.com">
+                    <i class="fa fa-list"></i>
+                    <span>返回文章列表</span>
+                </a>
+            </div>
+        </div>
+        {% include duoshuo.html %}
+    </div>
+    <div class="footer">Proudly powered by <a href="http://jekyll.bootcss.com/">Jekyll</a> and <a href="https://github.com/XfLoops">Github</a></div>
+</div>
+</body>
+</html>

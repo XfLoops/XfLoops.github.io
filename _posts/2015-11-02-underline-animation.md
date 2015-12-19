@@ -1,11 +1,10 @@
 ---
-layout: post-a
+layout: post-b
 title: 链接文字下划线动画
 type: article
 tags: css
 excerpt: 鼠标悬停时文字下方出现下划线,并伴有滑入的动画效果.
 ---
-# 链接文字下划线动画
 
 ## Demo和源代码
 在线demo:[underline animation](http://xfloops.com/demo/underline-animation/)

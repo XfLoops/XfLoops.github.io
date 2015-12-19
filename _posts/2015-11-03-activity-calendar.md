@@ -1,11 +1,10 @@
 ---
 title: 制作activity calendar
-layout: post-a
+layout: post-b
 type: article
 tags: javascript 
 excerpt: 介绍如何制作跟github的contribution calendar类似的activity calendar.
 ---
-# 制作activity calendar
 
 ## 简单的通用组件及源代码
 [github-calendar](https://github.com/XfLoops/github-calendar)是仿照Github的contribution calendar制作的通用组件。缺点是一、数据放在js文件中；二、没有实现"longest streak"和"current streak"。查看源代码:[https://github.com/XfLoops/github-calendar](https://github.com/XfLoops/github-calendar)

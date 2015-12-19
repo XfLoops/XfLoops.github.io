@@ -1,12 +1,11 @@
 ---
 title: HTML imports 入门
-layout: post-a
+layout: post-b
 type: article
 tags: HTML5
 excerpt: HTML导入让你以一个合并的HTML文件来加载这些资源。
 ---
 
-# HTML imports入门
 
 Template、Shadow DOM及Custom Elements 让你创建UI组件比以前更容易了。但是像HTML、CSS、JavaScript这样的资源仍然需要一个个地去加载，这是很没效率的。
 
