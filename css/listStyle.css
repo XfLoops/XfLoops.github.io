@@ -96,6 +96,11 @@ a {
 .post-list {
     float: right;
     color: #999;
+    font-weight:bold;
+    transition: all 0.2s;
+}
+.post-list:hover {
+    color: #EE3032;
 }
 .post-body {
     line-height: 1.5;
