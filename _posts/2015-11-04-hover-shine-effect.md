@@ -7,7 +7,7 @@ excerpt: 当悬停在图片或者按钮上时出现闪烁一下的效果
 ---
 
 ## Demo和源代码
-[在线demo](http://127.0.0.1:4000/demo/hover-effect/)
+[在线demo](http://xfloops.com/demo/hover-effect/)
 
 ## 用到的HTML5标签与CSS3属性
 

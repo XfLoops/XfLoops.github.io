@@ -15,6 +15,9 @@ a {
     text-decoration: none;
     color: #4078c0;
 }
+.external:hover {
+    text-decoration: underline;
+}
 /* icon */
 .fa {
     display: inline-block;
@@ -99,7 +102,7 @@ a {
     font-weight:bold;
 }
 .post-list:hover {
-    color: #EE3032;
+    color: #4078c0;
 }
 .post-body {
     line-height: 1.5;
@@ -109,6 +112,9 @@ a {
 }
 .post-body img {
     max-width: 80%;
+}
+.post-body a:hover {
+    text-decoration: underline;
 }
 .item {
     padding: 10px 15px;
