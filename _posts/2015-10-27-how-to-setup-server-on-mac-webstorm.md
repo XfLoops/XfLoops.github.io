@@ -1,6 +1,6 @@
 ---
 title: Mac上如何在WebStorm中搭建server
-layout: post-b
+layout: list
 type: article
 tags: js html css
 excerpt: 在WebStorm中搭建server以便手机访问进行调试

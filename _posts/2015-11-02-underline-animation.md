@@ -1,5 +1,5 @@
 ---
-layout: post-b
+layout: list
 title: 链接文字下划线动画
 type: article
 tags: css

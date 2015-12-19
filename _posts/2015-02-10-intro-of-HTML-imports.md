@@ -1,6 +1,6 @@
 ---
 title: HTML imports 入门
-layout: post-b
+layout: list
 type: article
 tags: HTML5
 excerpt: HTML导入让你以一个合并的HTML文件来加载这些资源。
