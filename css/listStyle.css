@@ -108,7 +108,9 @@ a {
 .post-body p {
     margin-bottom: 15px;
 }
-
+.post-body img {
+    max-width: 80%;
+}
 .item {
     padding: 10px 15px;
     background-color: #f5f5f5;
