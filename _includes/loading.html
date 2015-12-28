@@ -1,0 +1,11 @@
+<script>
+    var pageHeight = document.documentElement.clientHeight,
+        pageWidth = document.documentElement.clientWidth;
+    var top = pageHeight / 2,
+        left = pageWidth / 2;
+    var loadingHTML =
+            '<div id="loading" style = "position:absolute;left:0;top:0;width:100%;height:75px;' +
+            'background-color: #999;opacity: 0.2;z-index:100;">加载中...</div>';
+
+    document.write(loadingHTML);
+</script>

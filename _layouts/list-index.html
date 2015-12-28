@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <title>XFLOOPS</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum=1,width=device-width">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/listStyle.css">
+</head>
+<body>
+<div class="container">
+    <div class="vcard">
+        <!-- @todo 跟图片对齐-->
+        <a class="vcard-avatar" href="http://www.xfloops.com"><img src="images/xfl-126px.jpg"></a>
+        <ul class="vcard-details">
+            <li class="detail name">
+                <h1><a href="http://www.xfloops.com">XFLOOPS</a></h1>
+            </li>
+            <li class="detail">
+                <i class="fa fa-neuter"></i>
+                <span>Beijing China</span>
+            </li>
+            <li class="detail">
+                <i class="fa fa-weibo"></i>
+                <a class="external" href="http://weibo.com/fanglixie">Weibo</a>
+                <i class="fa fa-github"></i>
+                <a class="external" href="https://github.com/XfLoops">Github</a>
+            </li>
+
+            <li class="detail">
+                <i class="fa fa-envelope-o"></i>
+                <span>xfloops@gmail.com</span>
+            </li>
+            <li class="detail">
+                <i class="fa fa-clock-o"></i>
+                <span>{{ site.time | date: "%A %d %b %Y"  }}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <ul class="content">
+            {% for post in site.posts %}
+            <li class="item">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <span>{{ post.date | date_to_string }} </span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="footer">Proudly powered by <a class="external" href="http://jekyll.bootcss.com/">Jekyll</a> and <a class="external" href="https://github.com/XfLoops">Github</a></div>
+</div>
+{% include baidu-stat.html %}
+{% include statistic.html %}
+</body>
+</html>

@@ -1,2 +1,2 @@
 # XfLoops' blog
-Welcome you! [VISIT](http://www.xfloops.com).
+So,why you come to my blog? Whatever,welcome!

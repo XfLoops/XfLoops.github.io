@@ -297,7 +297,7 @@
             .attr('class','linelabel')
             .style('opacity',0)
             .style('fill','white')
-            .style("font-size","10px")
+            .style("fonts-size","10px")
             .transition()
             .style('opacity',1)        
           }//addLabel
