@@ -1,0 +1,272 @@
+commit fe1d1c56d004c44c33d9d10e255e3a8c9df1b5bd
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sun Jan 3 16:12:53 2016 +0800
+
+    add something new
+
+commit 79e2c1740a71c669b965eae9af9b5f63b76f7126
+Author: XfLoops <xfloops@gmail.com>
+Date:   Tue Dec 22 20:00:00 2015 +0800
+
+    normal cmt
+
+commit 4fb15da85f5309e79d8b7bd66e624ba983591066
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sun Dec 20 15:04:20 2015 +0800
+
+    close again
+
+commit ce3508f3ff62e4868664173e677bfc47eb236ac2
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 20:23:31 2015 +0800
+
+    add hover underline
+
+commit 5820b3424f63d2a0f9ff71c717b9599b2ab733e0
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 14:21:13 2015 +0800
+
+    change avatar
+
+commit 11410832b52aea1e6605eafffc7efc7c30aec76e
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 14:20:22 2015 +0800
+
+    close blog again
+
+commit f9b3c6518d36f3d9a7decac148b2e82e3fc79146
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 14:07:07 2015 +0800
+
+    add loading.html
+
+commit fd989ef28f57781376cbce9cdd950df92a16f4e5
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 13:18:49 2015 +0800
+
+    add hover to icon link
+
+commit 44e3ce6db959f68c88717e13a77b3c8bb1389b9a
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 13:13:53 2015 +0800
+
+    change avatar size
+
+commit 894780b01706566017f0c364252c78f2888cfc11
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 13:02:21 2015 +0800
+
+    amend icon style
+
+commit 3bb5f1e036095d1c74c34468f1d3c99b3fe695e8
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 12:28:25 2015 +0800
+
+    img width
+
+commit e7682bad3ef0a3d9986dc99a325121bd94a76af1
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 11:29:06 2015 +0800
+
+    add statistic
+
+commit 6bf16e7a786aad84f12e703cae8cd7dcc6362cd9
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 11:18:13 2015 +0800
+
+    rename layouts
+
+commit e4d5a04ebc00de727f9c59efc964ee244dfb69d0
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 11:15:00 2015 +0800
+
+    delete demo post
+
+commit 5942dade85350c852a24ef164ba2acff2924c5a4
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Dec 19 11:13:00 2015 +0800
+
+    update blog style
+
+commit 63efbbcf27d1e4fcc4a719d9116f8cb416577499
+Author: XfLoops <xfloops@gmail.com>
+Date:   Thu Nov 19 17:32:58 2015 +0800
+
+    hover demo
+
+commit f98c9b300a3d05af67fe34eef3ff94a31364b377
+Author: XfLoops <xfloops@gmail.com>
+Date:   Wed Nov 4 17:07:08 2015 +0800
+
+    turn off blog
+
+commit 29a13dfae6cd692949721dd4f58236f791a5bfe5
+Author: XfLoops <xfloops@gmail.com>
+Date:   Wed Nov 4 11:19:02 2015 +0800
+
+    add translation post:HTML Import
+
+commit e6e6344cdae70d7f9a38ed00a1d8bb0ae974f1ae
+Author: XfLoops <xfloops@gmail.com>
+Date:   Wed Nov 4 10:37:21 2015 +0800
+
+    remove shortcut icon
+
+commit 29b71a313d18a8d95fff489077cadeb9061025a3
+Author: XfLoops <xfloops@gmail.com>
+Date:   Wed Nov 4 10:21:03 2015 +0800
+
+    remove post example
+
+commit 062762b4a4ecade229e180eb3801da1a01ae81cf
+Author: XfLoops <xfloops@gmail.com>
+Date:   Wed Nov 4 10:16:51 2015 +0800
+
+    add baidu stat to post-a.html
+
+commit 32fd2e6f29383228e5ece34cb72e9b34e083f4ec
+Author: XfLoops <xfloops@gmail.com>
+Date:   Wed Nov 4 10:13:11 2015 +0800
+
+    fix CurrentStreak
+
+commit 059282e41afbbb6f91337bdcb0d1dadeb09e223e
+Author: XfLoops <xfloops@gmail.com>
+Date:   Wed Nov 4 01:27:08 2015 +0800
+
+    activity calendar post
+
+commit 5e7f14fed2a2b658b427c7c6fb4da3743af90ef4
+Author: XfLoops <xfloops@gmail.com>
+Date:   Tue Nov 3 22:47:54 2015 +0800
+
+    turn 'oo' to eye
+
+commit a1b9e46f0fbf8f0d612485dc896a69fef815e7ee
+Author: XfLoops <xfloops@gmail.com>
+Date:   Tue Nov 3 20:56:19 2015 +0800
+
+    correct domain in api.html
+
+commit 0b25cb9d3730a0aaa30453ac14b2beacde29a6e1
+Author: XfLoops <xfloops@gmail.com>
+Date:   Tue Nov 3 20:51:36 2015 +0800
+
+    restart blog
+
+commit 19b6346b9a0d2c8d4b473bfd68496136411968b9
+Author: XfLoops <xfloops@gmail.com>
+Date:   Tue Nov 3 18:13:16 2015 +0800
+
+    make new calendar
+
+commit a11308566529c46cdf08d39f0ed01a16516b2099
+Author: XfLoops <xfloops@gmail.com>
+Date:   Mon Nov 2 18:18:57 2015 +0800
+
+    add underline animation post
+
+commit 9ca249c727935f463e415716de244c1c813e2768
+Author: XfLoops <xfloops@gmail.com>
+Date:   Mon Nov 2 16:12:30 2015 +0800
+
+    add demo
+
+commit 30981ceff658bdc3d8048fe9577e4cdfbb08b352
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sun Nov 1 15:45:31 2015 +0800
+
+    change activity calendar
+
+commit 4c70ca9c387195ea93dae66398dba67c1d6eee35
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Oct 31 12:21:33 2015 +0800
+
+    fix float title
+
+commit 1274d9da8eb0673585a905bf7576c626167697c2
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Oct 31 01:42:23 2015 +0800
+
+    add title floater
+
+commit 5b21822a80aea0b8e1dc8980878c22fe907f3fcc
+Author: XfLoops <xfloops@gmail.com>
+Date:   Fri Oct 30 21:56:36 2015 +0800
+
+    add fonts
+
+commit d886909cabc7c3346691f77da1ed527691a7a61e
+Author: XfLoops <xfloops@gmail.com>
+Date:   Wed Oct 28 00:16:21 2015 +0800
+
+    close blog access
+
+commit 56be7c7825e26ab9fdfafabf8d7e7e3838469814
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Oct 24 23:08:38 2015 +0800
+
+    change siteURL
+
+commit d9d53598a28a571278ce16bdbe99270989036215
+Author: XfLoops <xfloops@gmail.com>
+Date:   Sat Oct 24 23:07:03 2015 +0800
+
+    test post
+
+commit ac3cb4f8f4d7d6f4c2b27a94b973377234c4090a
+Author: XfLoops <xfloops@gmail.com>
+Date:   Fri Oct 23 18:56:57 2015 +0800
+
+    delete blog index.html
+
+commit 26a63a875df6378d89f2d9fe4ab47b3c7c28f0e9
+Author: XfLoops <xfloops@gmail.com>
+Date:   Fri Oct 23 18:51:27 2015 +0800
+
+    delete 2 plugins
+
+commit 522c6482ad35f43227b05432a4cfbf0c82cc2044
+Author: XfLoops <xfloops@gmail.com>
+Date:   Fri Oct 23 18:28:28 2015 +0800
+
+    add baidu statistic code
+
+commit af2894d226e0a97760fc7c8deb882cb6d1335e18
+Author: XfLoops <xfl.zero@gmail.com>
+Date:   Tue Oct 13 11:49:08 2015 +0800
+
+    Revert "test"
+    
+    This reverts commit a281bdbe94ca1362cda54bdbb6dea084b1c75bef.
+
+commit a281bdbe94ca1362cda54bdbb6dea084b1c75bef
+Author: XfLoops <xfl.zero@gmail.com>
+Date:   Tue Oct 13 11:44:53 2015 +0800
+
+    test
+
+commit 51aa835cf2f5adb87fb6a69312b16ea56869bd23
+Merge: ba59d9a fe4eada
+Author: XfLoops <xfloops@gmail.com>
+Date:   Thu Oct 8 21:08:50 2015 +0800
+
+    init
+
+commit ba59d9a439fd3fab43dddf77419590ae8bc390b1
+Author: XfLoops <xfloops@gmail.com>
+Date:   Thu Oct 8 21:07:13 2015 +0800
+
+    a
+
+commit fe4eada6507c13af586c2718867684d3da0a67e7
+Author: XfLoops <xfloops@gmail.com>
+Date:   Thu Oct 8 20:07:35 2015 +0800
+
+    initial commit
+
+commit 2ef0534ba78e71f03de09aa44e4f0882af8a097a
+Author: Fangli Xie <xfloops@gmail.com>
+Date:   Tue Sep 8 17:04:38 2015 +0800
+
+    Create README.md

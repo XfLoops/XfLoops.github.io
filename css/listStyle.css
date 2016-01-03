@@ -32,6 +32,7 @@ a {
     margin: 0 auto;
     padding: 0 10px;
     overflow: hidden;
+    position: relative;
 }
 /* vcard style */
 @media screen and (min-width: 600px) {
@@ -59,6 +60,12 @@ a {
 .vcard-details .detail {
     line-height: 1.5;
 }
+.vcard-details .detail .quote {
+    color: #999;
+    font-style: italic;
+    background-color: #f5f5f5;
+    padding: 0 2px;
+}
 .vcard-details .name {
     /*border-bottom: 1px solid #eee;*/
 }
@@ -72,6 +79,9 @@ a {
         float: right;
         width: 70%;
         margin-top: 75px;
+        position: absolute;
+        right:0;
+        top:0;
     }
 }
 @media screen and (max-width: 600px) {
@@ -147,25 +157,26 @@ a {
 }
 
 /* calendar */
-.calendar {
-    width:28%;
-    border: 1px solid #f5f5f5;
-    float: left;
-    height: 150px;
-    margin-top: 10px;
-    border-radius: 3px;
-}
 
 /* license */
 .license {
-    width: 28%;
-    float: left;
     clear: both;
     margin-top: 10px;
     border: 1px solid #f5f5f5;
     border-radius: 3px;
 }
-
+/* footer style */
+@media screen and (min-width: 600px) {
+    .license {
+        width: 28%;
+        float: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    .license {
+        width: 100%;
+    }
+}
 
 /* footer style */
 @media screen and (min-width: 600px) {

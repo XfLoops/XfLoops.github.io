@@ -15,5 +15,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "angular": "~1.4.8",
+    "moment": "~2.11.0"
+  }
 }

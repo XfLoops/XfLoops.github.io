@@ -1,6 +1,14 @@
 {
 "domain":"http://xfloops.com/",
 "posts":[
+{"title":"jekyll 常用变量",
+"url":"/2016/01/03/jekyll-variables/",
+"type":"article",
+"tags":"jekyll",
+"excerpt":"使用jekyll搭建静态博客时,需要用到jekyll变量来写模板.",
+"date":"03 Jan 2016"}
+,
+
 {"title":"hover shine effect",
 "url":"/2015/11/04/hover-shine-effect/",
 "type":"article",
