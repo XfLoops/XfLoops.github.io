@@ -5,22 +5,23 @@
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <title>XFLOOPS</title>
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum=1,width=device-width">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/listStyle.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/listStyle.css">
 </head>
 <body>
 <div class="container">
     <div class="vcard">
         <!-- @todo 跟图片对齐-->
-        <a class="vcard-avatar" href="http://www.xfloops.com"><img src="images/xfl-126px.jpg"></a>
+        <a class="vcard-avatar" href="http://www.xfloops.com"><img src="/images/xfl-126px.jpg"></a>
         <ul class="vcard-details">
             <li class="detail name">
                 <h1><a href="http://www.xfloops.com">XFLOOPS</a></h1>
             </li>
             <li class="detail">
-                <i class="fa fa-bookmark-o"></i>
-                <span>FETech</span>
+                <i class="fa fa-quote-left"></i>
+                <span class="quote">virtue makes own way</span>
             </li>
             <li class="detail">
                 <i class="fa fa-weibo"></i>
@@ -31,7 +32,7 @@
 
             <li class="detail">
                 <i class="fa fa-envelope-o"></i>
-                <span>xfloops[a]gmail.com</span>
+                <span>xfloops[at]gmail.com</span>
             </li>
             <li class="detail">
                 <i class="fa fa-calendar"></i>
@@ -39,7 +40,22 @@
             </li>
         </ul>
     </div>
+    <!-- @todo 添加活动日历-->
     <div class="main">
+        <!-- @todo 添加选项卡仿照segmentfault-->
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#">文章列表<span class="badge">1</span></a>
+            </li>
+            <li><a href="#">动态</a></li>
+            <li><a href="#">项目<span class="badge">1</span></a></li>
+            <li><a href="#">声望</a></li>
+            <li><a href="#">标签</a></li>
+            <li><a href="#">回答<span class="badge">1</span></a></li>
+            <li><a href="#">提问<span class="badge">1</span></a></li>
+            <li><a href="#">收藏<span class="badge">1</span></a></li>
+            <li><a href="#">关注<span class="badge">1</span></a></li>
+        </ul>
         <ul class="content">
             {% for post in site.posts %}
             <li class="item">
@@ -49,9 +65,16 @@
             {% endfor %}
         </ul>
     </div>
+    <div class="calendar">
+
+    </div>
+    <div class="license">
+        {% include license2.html %}
+    </div>
     <!--@todo添加网站加载时间-->
     <div class="footer">Proudly powered by <a class="external" href="http://jekyll.bootcss.com/">Jekyll</a> and hosted by <a class="external" href="https://github.com/XfLoops">Github</a></div>
 </div>
+<script src="/javascript/listScript.js"></script>
 {% include baidu-stat.html %}
 {% include statistic.html %}
 </body>
