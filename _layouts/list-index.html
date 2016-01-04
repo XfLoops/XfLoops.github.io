@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.css">
     <link rel="stylesheet" href="/css/listStyle.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -30,7 +28,6 @@
                 <a class="external" href="http://weibo.com/fanglixie">Weibo</a>
                 <i class="fa fa-github"></i>
                 <a class="external" href="https://github.com/XfLoops">Github</a>
-                <!--@todo 添加微信-->
             </li>
 
             <li class="detail">
@@ -43,7 +40,6 @@
             </li>
         </ul>
     </div>
-    <!-- @todo 添加活动日历-->
     <div ng-app="myApp" ng-controller="AppCtrl" class="calendar-container">
         <h4 class="calendar-title">博客活跃状态</h4>
         <div calendar class="calendar" id="calendar"></div>
@@ -52,7 +48,7 @@
         <!-- @todo 添加选项卡仿照segmentfault-->
         <ul class="nav nav-tabs">
             <li class="active">
-                <a href="#">文章列表<span class="badge">{{paginator.total_posts}}</span></a>
+                <a href="#">文章列表<span class="badge">1</span></a>
             </li>
             <li><a href="#">动态</a></li>
             <li><a href="#">项目<span class="badge">1</span></a></li>
@@ -72,16 +68,16 @@
             {% endfor %}
         </ul>
     </div>
+    <div class="calendar">
+
+    </div>
     <div class="license">
         {% include license2.html %}
     </div>
-    <!--@todo添加网站加载时间-->
+    <!--@todo 添加网站加载时间-->
     <div class="footer">Proudly powered by <a class="external" href="http://jekyll.bootcss.com/">Jekyll</a> and hosted by <a class="external" href="https://github.com/XfLoops">Github</a></div>
 </div>
-<script src="/bower_components/angular/angular.min.js"></script>
-<script src='/bower_components/moment/min/moment.min.js'></script>
-<script src="/javascript/index.js"></script>
-<script src="/javascript/listScript.js" async></script>
+<script src="/javascript/listScript.js"></script>
 {% include baidu-stat.html %}
 {% include statistic.html %}
 </body>
