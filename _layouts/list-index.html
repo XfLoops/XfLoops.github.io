@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/newCalendar.css">
     <link rel="stylesheet" href="/css/listStyle.css">
 </head>
 <body>
@@ -68,15 +69,15 @@
             {% endfor %}
         </ul>
     </div>
-    <div class="calendar">
-
-    </div>
     <div class="license">
         {% include license2.html %}
     </div>
     <!--@todo 添加网站加载时间-->
     <div class="footer">Proudly powered by <a class="external" href="http://jekyll.bootcss.com/">Jekyll</a> and hosted by <a class="external" href="https://github.com/XfLoops">Github</a></div>
 </div>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/moment/min/moment.min.js"></script>
 <script src="/javascript/listScript.js"></script>
 {% include baidu-stat.html %}
 {% include statistic.html %}
