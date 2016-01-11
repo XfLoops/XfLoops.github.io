@@ -122,7 +122,6 @@
 .month {
     /*overflow: hidden;*/
     opacity: 0;
-    margin-bottom: 40px;
     transition: all 0.7s ease;
 }
 .month.new {
@@ -154,16 +153,13 @@
     opacity: 1;
 }
 .week-days {
-    padding: 8px 0px;
     background-color: #efefef;
-    border-top: 4px solid #2066A3;
 }
 .week-days .day {
     cursor: default;
 }
 .week {
     background-color: #fff;
-    /* background: #4A4A4A; */
 }
 .day {
     display: inline-block;
@@ -172,9 +168,11 @@
     text-align: center;
     vertical-align: top;
     cursor: pointer;
-    /* background: #4A4A4A; */
     position: relative;
     z-index: 100;
+}
+.day:hover {
+    background-color: #efefef;
 }
 .day.other {
     color: #E9E9E9;
@@ -614,4 +612,11 @@
         padding: 0px;
         height: 0px;
     }
+}
+.hasEventDay {
+    background-color: rgb(66, 139, 202);
+    color: #fff;
+}
+.hasEventDay:hover {
+    background-color: #EE3032;
 }

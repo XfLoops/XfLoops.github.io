@@ -14,13 +14,6 @@
         }, 0);
         this.current = moment().date(1);
         this.draw();
-        var current = document.querySelector('.today');
-        if (current) {
-            var self = this;
-            window.setTimeout(function() {
-                self.openDay(current);
-            }, 500);
-        }
     }
 
     Calendar.prototype.draw = function() {
@@ -157,35 +150,28 @@
 
         //Outer Day
         var outer = createElement('div', this.getDayClass(day));
-        var circle = createElement('span', 'circle');
         if(todayEvents) {
             outer.addEventListener('click', function() {
                 self.openDay(this);
             });
             // Circle
-            var size = (1 / this.maxEvents) * todayEvents.events.length;
-            circle.style.webkitTransform = 'scale(' + size + ')';
-            circle.style.MozProperty = 'scale(' + size + ')';
-            circle.style.transform = 'scale(' + size + ')';
-        } else {
-            circle.style.webkitTransform = 'scale(0, 0)';
-            circle.style.MozProperty = 'scale(0, 0)';
-            circle.style.transform = 'scale(0, 0)';
-            outer.style.cursor = 'default';
+            var alpha = todayEvents.events.length / this.maxEvents;
+            outer.classList.add('hasEventDay');
+            outer.style.opacity = alpha;
         }
 
         //Day Name
-        var name = createElement('div', 'day-name', day.format('ddd'));
+        //var name = createElement('div', 'day-name', day.format('ddd'));
 
         //Day Number
         var number = createElement('div', 'day-number', day.format('DD'));
 
         //Events
-        var events = createElement('div', 'day-events');
-        this.drawEvents(day, events);
+        //var events = createElement('div', 'day-events');
+        //this.drawEvents(day, events);
 
         //outer.appendChild(name);
-        outer.appendChild(circle);
+        //outer.appendChild(circle);
         outer.appendChild(number);
         //outer.appendChild(events);
         this.week.appendChild(outer);
@@ -203,6 +189,7 @@
             todaysEvents.forEach(function(ev) {
                 var evSpan = createElement('span', ev.color);
                 element.appendChild(evSpan);
+                console.log('evet:',ev);
             });
         }
     }
@@ -227,7 +214,26 @@
         //Check to see if there is an open detais box on the current row
         if (currentOpened && currentOpened.parentNode === el.parentNode) {
             details = currentOpened;
-            arrow = document.querySelector('.arrow');
+            // when click on the same element,then close.
+            var flag = parseInt(details.getAttribute('flag'));
+            if(flag === dayNumber) {
+                currentOpened.addEventListener('webkitAnimationEnd', function() {
+                    currentOpened.parentNode.removeChild(currentOpened);
+                });
+                currentOpened.addEventListener('oanimationend', function() {
+                    currentOpened.parentNode.removeChild(currentOpened);
+                });
+                currentOpened.addEventListener('msAnimationEnd', function() {
+                    currentOpened.parentNode.removeChild(currentOpened);
+                });
+                currentOpened.addEventListener('animationend', function() {
+                    currentOpened.parentNode.removeChild(currentOpened);
+                });
+                currentOpened.className = 'details out';
+            }
+            else {
+                arrow = document.querySelector('.arrow');
+            }
         } else {
             //Close the open events on differnt week row
             //currentOpened && currentOpened.parentNode.removeChild(currentOpened);
@@ -248,8 +254,8 @@
             }
 
             //Create the Details Container
-            details = createElement('div', 'details in');
-
+            details = createElement('div', 'details in ');
+            details.setAttribute("flag",dayNumber);
             //Create the arrow
             var arrow = createElement('div', 'arrow');
 
@@ -262,9 +268,7 @@
             return event.date.isSame(day, 'day');
         });
 
-        console.log('m: ', todaysEvents)
         this.renderEvents(todaysEvents, details);
-
         arrow.style.left = el.offsetLeft - el.parentNode.offsetLeft + (el.offsetWidth / 2) + 'px';
     }
 
@@ -348,13 +352,13 @@
     }
 
     Calendar.prototype.nextMonth = function() {
-        this.current.add('months', 1);
+        this.current.add(1,'months');
         this.next = true;
         this.draw();
     }
 
     Calendar.prototype.prevMonth = function() {
-        this.current.subtract('months', 1);
+        this.current.subtract(1,'months');
         this.next = false;
         this.draw();
     }
@@ -386,21 +390,21 @@ app.directive('calendar', [function(){
         },
         link: function(scope, element, attributes) {
             var data = [{
-                date: new Date(2015, 0, 1),
+                date: new Date(2016, 0, 1),
                 events: [{
                     name: 'smokeloader',
                     type: 'bot',
                     color: 'orange'
                 }]
             }, {
-                date: new Date(2015, 0, 2),
+                date: new Date(2016, 0, 2),
                 events: [{
                     name: 'zeus',
                     type: 'bot',
                     color: 'blue'
                 }]
             }, {
-                date: new Date(2015, 0, 3),
+                date: new Date(2016, 0, 3),
                 events: [{
                     name: 'ponyloader',
                     type: 'bot',
@@ -415,14 +419,14 @@ app.directive('calendar', [function(){
                     color: 'yellow'
                 }]
             }, {
-                date: new Date(2016, 1, 4),
+                date: new Date(2016, 0, 4),
                 events: [{
                     name: 'andromeda',
                     type: 'bot',
                     color: 'green'
                 }]
             }, {
-                date: new Date(2016, 1, 5),
+                date: new Date(2016, 0, 5),
                 events: [{
                     name: 'conficker',
                     type: 'bot',
@@ -433,21 +437,21 @@ app.directive('calendar', [function(){
                     color: 'orange'
                 }]
             }, {
-                date: new Date(2016, 1, 17),
+                date: new Date(2016, 0, 17),
                 events: [{
                     name: 'aldibot',
                     type: 'bot',
                     color: 'pink'
                 }]
             }, {
-                date: new Date(2015, 0, 2),
+                date: new Date(2016, 0, 2),
                 events: [{
                     name: 'zeus',
                     type: 'bot',
                     color: 'blue'
                 }]
             }, {
-                date: new Date(2015, 0, 18),
+                date: new Date(2016, 0, 18),
                 events: [{
                     name: 'ponyloader',
                     type: 'bot',
@@ -462,14 +466,14 @@ app.directive('calendar', [function(){
                     color: 'yellow'
                 }]
             }, {
-                date: new Date(2016, 1, 19),
+                date: new Date(2016, 0, 19),
                 events: [{
                     name: 'zeus',
                     type: 'bot',
                     color: 'blue'
                 }]
             }, {
-                date: new Date(2015, 0, 19),
+                date: new Date(2016, 0, 22),
                 events: [{
                     name: 'ponyloader',
                     type: 'bot',
