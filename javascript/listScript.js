@@ -5,13 +5,13 @@
     function Calendar(selector, events) {
         this.el = document.querySelector(selector);
         this.events = events;
-        this.maxEvents = this.events.reduce(function(p, c){
-            if(c.events.length > p) {
-                return c.events.length;
-            } else {
-                return p;
-            }
-        }, 0);
+        //this.maxEvents = this.events.reduce(function(p, c){
+        //    if(c.events.length > p) {
+        //        return c.events.length;
+        //    } else {
+        //        return p;
+        //    }
+        //}, 0);
         this.current = moment().date(1);
         this.draw();
     }
@@ -155,9 +155,9 @@
                 self.openDay(this);
             });
             // Circle
-            var alpha = todayEvents.events.length / this.maxEvents;
+            //var alpha = todayEvents.events.length / this.maxEvents;
             outer.classList.add('hasEventDay');
-            outer.style.opacity = alpha;
+            //outer.style.opacity = alpha;
         }
 
         //Day Name
@@ -206,7 +206,7 @@
 
     Calendar.prototype.openDay = function(el) {
         var details, arrow;
-        var dayNumber = +el.querySelectorAll('.day-number')[0].innerText || +el.querySelectorAll('.day-number')[0].textContent;
+        var dayNumber = el.querySelectorAll('.day-number')[0].innerText || el.querySelectorAll('.day-number')[0].textContent;
         var day = this.current.clone().date(dayNumber);
 
         var currentOpened = document.querySelector('.details');
@@ -215,7 +215,7 @@
         if (currentOpened && currentOpened.parentNode === el.parentNode) {
             details = currentOpened;
             // when click on the same element,then close.
-            var flag = parseInt(details.getAttribute('flag'));
+            var flag = details.getAttribute('flag');
             if(flag === dayNumber) {
                 currentOpened.addEventListener('webkitAnimationEnd', function() {
                     currentOpened.parentNode.removeChild(currentOpened);
@@ -285,10 +285,10 @@
             console.log("evv: ", ev);
             var div = createElement('div', 'event');
             var square = createElement('div', 'event-category ' + ev.color);
-            var span = createElement('span', '', ev.name);
-
+            var anchor = createElement('a', 'post-anchor', ev.name);
+            anchor.setAttribute("href",ev.url);
             div.appendChild(square);
-            div.appendChild(span);
+            div.appendChild(anchor);
             wrapper.appendChild(div);
         });
 

@@ -620,3 +620,9 @@
 .hasEventDay:hover {
     background-color: #EE3032;
 }
+.hasEventDay:active {
+    background-color: #EE3032;
+}
+.post-anchor {
+    margin-left: 10px;
+}
