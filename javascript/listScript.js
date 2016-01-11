@@ -389,98 +389,103 @@ app.directive('calendar', [function(){
             events: '='
         },
         link: function(scope, element, attributes) {
-            var data = [{
-                date: new Date(2016, 0, 1),
-                events: [{
-                    name: 'smokeloader',
-                    type: 'bot',
-                    color: 'orange'
-                }]
-            }, {
-                date: new Date(2016, 0, 2),
-                events: [{
-                    name: 'zeus',
-                    type: 'bot',
-                    color: 'blue'
-                }]
-            }, {
-                date: new Date(2016, 0, 3),
-                events: [{
-                    name: 'ponyloader',
-                    type: 'bot',
-                    color: 'yellow'
-                }, {
-                    name: 'aldibot',
-                    type: 'bot',
-                    color: 'yellow'
-                }, {
-                    name: 'dirtjumper',
-                    type: 'malware',
-                    color: 'yellow'
-                }]
-            }, {
-                date: new Date(2016, 0, 4),
-                events: [{
-                    name: 'andromeda',
-                    type: 'bot',
-                    color: 'green'
-                }]
-            }, {
-                date: new Date(2016, 0, 5),
-                events: [{
-                    name: 'conficker',
-                    type: 'bot',
-                    color: 'orange'
-                }, {
-                    name: 'umbraloader',
-                    type: 'bot',
-                    color: 'orange'
-                }]
-            }, {
-                date: new Date(2016, 0, 17),
-                events: [{
-                    name: 'aldibot',
-                    type: 'bot',
-                    color: 'pink'
-                }]
-            }, {
-                date: new Date(2016, 0, 2),
-                events: [{
-                    name: 'zeus',
-                    type: 'bot',
-                    color: 'blue'
-                }]
-            }, {
-                date: new Date(2016, 0, 18),
-                events: [{
-                    name: 'ponyloader',
-                    type: 'bot',
-                    color: 'yellow'
-                }, {
-                    name: 'aldibot',
-                    type: 'bot',
-                    color: 'yellow'
-                }, {
-                    name: 'dirtjumper',
-                    type: 'malware',
-                    color: 'yellow'
-                }]
-            }, {
-                date: new Date(2016, 0, 19),
-                events: [{
-                    name: 'zeus',
-                    type: 'bot',
-                    color: 'blue'
-                }]
-            }, {
-                date: new Date(2016, 0, 22),
-                events: [{
-                    name: 'ponyloader',
-                    type: 'bot',
-                    color: 'yellow'
-                }]
-            }]
-            var calendar = new Calendar('#calendar', data);
+            //var data = [{
+            //    date: new Date(2016, 0, 1),
+            //    events: [{
+            //        name: 'smokeloader',
+            //        type: 'bot',
+            //        color: 'orange'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 2),
+            //    events: [{
+            //        name: 'zeus',
+            //        type: 'bot',
+            //        color: 'blue'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 3),
+            //    events: [{
+            //        name: 'ponyloader',
+            //        type: 'bot',
+            //        color: 'yellow'
+            //    }, {
+            //        name: 'aldibot',
+            //        type: 'bot',
+            //        color: 'yellow'
+            //    }, {
+            //        name: 'dirtjumper',
+            //        type: 'malware',
+            //        color: 'yellow'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 4),
+            //    events: [{
+            //        name: 'andromeda',
+            //        type: 'bot',
+            //        color: 'green'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 5),
+            //    events: [{
+            //        name: 'conficker',
+            //        type: 'bot',
+            //        color: 'orange'
+            //    }, {
+            //        name: 'umbraloader',
+            //        type: 'bot',
+            //        color: 'orange'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 17),
+            //    events: [{
+            //        name: 'aldibot',
+            //        type: 'bot',
+            //        color: 'pink'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 2),
+            //    events: [{
+            //        name: 'zeus',
+            //        type: 'bot',
+            //        color: 'blue'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 18),
+            //    events: [{
+            //        name: 'ponyloader',
+            //        type: 'bot',
+            //        color: 'yellow'
+            //    }, {
+            //        name: 'aldibot',
+            //        type: 'bot',
+            //        color: 'yellow'
+            //    }, {
+            //        name: 'dirtjumper',
+            //        type: 'malware',
+            //        color: 'yellow'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 19),
+            //    events: [{
+            //        name: 'zeus',
+            //        type: 'bot',
+            //        color: 'blue'
+            //    }]
+            //}, {
+            //    date: new Date(2016, 0, 22),
+            //    events: [{
+            //        name: 'ponyloader',
+            //        type: 'bot',
+            //        color: 'yellow'
+            //    }]
+            //}]
+            // read data from data.json NOTICE! data format MUSTBE json standard!!!
+            // Or the callback do not run.
+            $.getJSON('../data.json',function (result) {
+                var data = result.data;
+                new Calendar('#calendar', data);
+            });
         }
     }
 }]);
