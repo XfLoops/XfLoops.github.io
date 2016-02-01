@@ -4,4 +4,4 @@ branches:
 
 sudo: required
 
-language: javascript
+language: node_js
