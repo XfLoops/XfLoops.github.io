@@ -24,26 +24,25 @@
             border-radius:5px;
             box-shadow:0 0 5px 5px #eee;
         }
-        .timer{
+        #time {
             font-family: "KeepCalm";
-            font-size: 18px;
-            color: #eee;
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            border: 1px cadetblue solid;
         }
     </style>
 </head>
 <body>
     <div class="wrap">
         <a href=""><img src="images/xfl-126px.jpg"></a>
-        <h1>coming soon</h1>
-        <div class="timer"></div>
+        <h1>RESTART IN <span id="time"></span> HOURS</h1>
     </div>
     <script>
-         var time  = 0;
-         document.querySelector(".timer").innerHTML = "Welcome";
-         setInterval(function(){
-             time += 5;
-             document.querySelector(".timer").innerHTML = time + " seconds elapsed."
-        },5e3);
+        var deadline = new Date('2016-03-28') / 3600000;
+        var now = new Date().getTime() / 3600000;
+        var seconds = document.getElementById('time');
+        seconds.innerHTML = Math.floor(deadline - now);
     </script>
 </body>
 </html>
