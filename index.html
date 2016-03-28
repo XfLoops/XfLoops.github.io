@@ -39,7 +39,7 @@
         <h1>RESTART IN <span id="time"></span> HOURS</h1>
     </div>
     <script>
-        var deadline = new Date('2016-03-28') / 3600000;
+        var deadline = new Date('2016-04-01') / 3600000;
         var now = new Date().getTime() / 3600000;
         var seconds = document.getElementById('time');
         seconds.innerHTML = Math.floor(deadline - now);
