@@ -36,13 +36,7 @@
 <body>
     <div class="wrap">
         <a href=""><img src="images/xfl-126px.jpg"></a>
-        <h1>RESTART IN <span id="time"></span> HOURS</h1>
+        <h1>Deadline is Dead!</h1>
     </div>
-    <script>
-        var deadline = new Date('2016-04-01') / 3600000;
-        var now = new Date().getTime() / 3600000;
-        var seconds = document.getElementById('time');
-        seconds.innerHTML = Math.floor(deadline - now);
-    </script>
 </body>
 </html>
