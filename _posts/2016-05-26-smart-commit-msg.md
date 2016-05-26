@@ -7,6 +7,7 @@ refers:
 Naming a variable or structuring a commit message is usually a brain-racking task to me. To make it efficient and effective, I introduced a rigid commit message format by [JEREMY MACK](http://t.cn/R5wFoN9) to help me become a better programmer.
 
 So a message appears in this way:
+
 ```
 feat: add hat wobble
 ^--^  ^------------^
@@ -15,6 +16,7 @@ feat: add hat wobble
 |
 +-------> Type: chore, docs, feat, fix, refactor, style, or test.
 
+```
 +	feat (new feature)
 +	fix (bug fix)
 +	docs (changes to documentation)
@@ -22,9 +24,10 @@ feat: add hat wobble
 +	refactor (refactoring production code)
 +	test (adding missing tests, refactoring tests; no production code change)
 +	chore (updating grunt tasks etc; no production code change)
-```
 
-THE END.
+
+
+END
 
 
 
