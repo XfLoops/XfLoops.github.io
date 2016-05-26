@@ -25,12 +25,12 @@ feat: add hat wobble
 +	test (adding missing tests, refactoring tests; no production code change)
 +	chore (updating grunt tasks etc; no production code change)
 
+END
 
 **Reference**
 
 [1] [https://seesparkbox.com/foundry/semantic_commit_messages](https://seesparkbox.com/foundry/semantic_commit_messages)
 
-END
 
 
 
