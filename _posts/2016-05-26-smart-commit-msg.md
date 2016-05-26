@@ -26,6 +26,9 @@ feat: add hat wobble
 +	chore (updating grunt tasks etc; no production code change)
 
 
+**Reference**
+
+[1] [https://seesparkbox.com/foundry/semantic_commit_messages](https://seesparkbox.com/foundry/semantic_commit_messages)
 
 END
 
