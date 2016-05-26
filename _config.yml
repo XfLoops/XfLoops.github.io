@@ -1,11 +1,13 @@
 name: XfLoops' Blog
 source: .
 destination: ./_site
-plugins: ./_plugins
+plugins_dir: ./_plugins
 lsi:      false
 safe:     false
 permalink: pretty
-markdown: redcarpet
-paginate: 12
+markdown: kramdown
 encoding: utf-8
-
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+paginate: 20
+gems: [jekyll-paginate]
+paginate_path: "page:num"
