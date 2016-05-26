@@ -11,7 +11,7 @@
     <tbody>
     {% for post in site.posts %}
     <tr>
-        <td><a href="{{ post.url }}">{{ post.date }}</a></td>
+        <td><a href="{{ post.url }}">{{ post.date | date: '%Y%m%d0%j0%u'}}</a></td>
         <td>{{ post.title | capitalize }}</td>
         <td>
             {% assign max = post.refers.size - 1 %}
