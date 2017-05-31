@@ -151,6 +151,13 @@ text-align: center;
 .navbar{
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
 }
+.posted-on {
+
+}
+.categories-on {
+  background-color: #093750;
+  padding: 0 5px;
+}
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -195,3 +202,5 @@ $on-laptop:        800px;
 @import
         "syntax-highlighting"
 ;
+
+
