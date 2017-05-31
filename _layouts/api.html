@@ -1,1 +1,0 @@
-{"data":[{% for post in site.posts %}{"date": "{{ post.date }}","events": [{"name": "{{ post.title }}","type":"{{ post.type }}","url":"{{ post.url }}","color":"orange"}]}{% unless forloop.last %},{% endunless %}{% endfor %}]}

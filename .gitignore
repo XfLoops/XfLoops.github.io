@@ -4,3 +4,4 @@ _drafts
 node_modules
 templ
 .DS_Store
+.sass-cache
