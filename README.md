@@ -1,3 +1,3 @@
 ## XfLoops' Blog
 
-Homepage of XfLoops.
+This is a personal homepage.
